@@ -169,6 +169,7 @@ function renderHTML() {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
         <title>Team Builder</title>
     </head>
     
@@ -212,7 +213,7 @@ function renderHTML() {
             </div>
         <div class="lower">
             <p id="id">ID: ${manager.getID()}</p>
-            <p id="email">E-mail: ${manager.getEmail()}</p>
+            <p id="email">E-mail: <a href="mailto:">${manager.getEmail()}</a></p>
             <p id="office">Office: ${manager.getOfficeNumber()}</p>
         </div>
 
@@ -228,20 +229,6 @@ function renderHTML() {
     fs.writeFile('./dist/index.html', HTML, (err) =>
         err ? console.error(err) : console.log('Successfully generated HTML!')
     );
-
-    // console.log("finished");
-    // console.log(`Manager's Details:
-    // Role: ${manager.getRole()}
-    // Name: ${manager.getName()}
-    // Id: ${manager.getID()}
-    // Office no.: ${manager.getOfficeNumber()}
-
-    // ${engineerArray}
-    // ${internArray}
-
-    // `
-
-    // )
 
 }
 
@@ -288,7 +275,7 @@ function renderIntern() {
             <h2>${element.getRole()}</h2>
         </div>
         <div class="icon">
-                <svg height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.65 58.19">
+                <svg id="apple" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.65 58.19">
                     <g>
                         <path
                             d="M6.43 51.74A22 22 0 0113.3 16a12.05 12.05 0 01-3.81-4 11.08 11.08 0 01-1.31-9 11.06 11.06 0 017.31 5.36 12.32 12.32 0 011.62 4.43 20.15 20.15 0 014-6.63C24.58 2.36 28.93.19 32.76 0c.21 3.83-1.5 8.38-4.93 12.2a21.1 21.1 0 01-2.37 2.26 22 22 0 0113.19 7.36 15 15 0 000 28.73 22 22 0 01-31 2.3c-.44-.35-.83-.72-1.22-1.11z"
@@ -299,7 +286,7 @@ function renderIntern() {
         <div class="lower">
             <p id="id">ID: ${element.getID()}</p>
             <p id="email">E-mail: <a href="mailto:">${element.getEmail()}</a></p>
-            <p id="school">University: ${element.getSchool()}</p>
+            <p id="school">School: ${element.getSchool()}</p>
         </div>
     </div>`
 
