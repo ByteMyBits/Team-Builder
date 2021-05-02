@@ -1,0 +1,16 @@
+{
+  "name": "Team-Builder",
+  "version": "1.0.0",
+  "description": "* [Installation](#installation)\r * [Usage](#Usage)\r * [License](#License)\r * [Contributing](#Contributing)\r * [Tests](#Tests)\r * [Questions](#Questions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "jest": "^26.6.3"
+  }
+}

@@ -1,0 +1,7 @@
+class Intern {
+    constructor() {
+
+    }
+
+
+}

@@ -1,0 +1,84 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 15px;
+    height: 300px;
+    width: 250px;
+    box-shadow: 5px 10px 18px #34343A;
+    flex-basis: 33.3333;
+}
+
+.title {
+    color: #34343A;
+}
+
+header {
+    text-align: center;
+    margin: 30px;
+    font-size: 3rem;
+}
+
+.header {
+    height: 45%;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manager>.header {
+    background-color: #FFCA3A
+}
+
+.engineer>.header {
+    background-color: #6938F2;
+}
+
+.intern>.header {
+    background-color: #FF595E;
+}
+
+.icon {
+    background-color: #34343A;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    position: relative;
+    top: -40px;
+    left: 80px;
+}
+
+.lower {
+    position: relative;
+    top: -35px;
+}
+
+h1, h2 {
+    margin: 0;
+    color: white;
+    padding-top: 10px;
+    padding: 0;
+    margin-top: 5px;
+}
+
+p {
+    font-size: 24px;
+    margin: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.manager {}
